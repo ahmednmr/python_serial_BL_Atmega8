@@ -146,7 +146,7 @@ class Window(tk.Tk):
                 z=str(y)
 #print(z, end ="")
                 recieved_bytes+=z
-                if z=="##" :
+                if z=="##" or z=="64":
                     print("Target_Responding")
                     boot.start_recieving=False
                     
